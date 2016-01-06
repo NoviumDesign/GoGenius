@@ -1,0 +1,31 @@
+.subpage-body
+  background-image: url('/_System/assets/img/logo-background.svg')
+  background-size: 100%
+  background-repeat: no-repeat
+  background-position: center
+
+  .subpage-main
+    @extend .container
+
+    .subpage-article
+      +span(full)
+      padding: 0 $base-spacing
+
+      +breakpoint($medium-screen)
+        +span(10)
+        +push(1)
+
+      +breakpoint($large-screen)
+        +span(6)
+        +push(3)
+
+    .subpage-image
+      +span(full)
+      padding: $base-spacing 0
+
+      +breakpoint($large-screen)
+        +span(8)
+        +push(2)
+
+      img
+        width: 100%

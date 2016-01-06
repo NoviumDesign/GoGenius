@@ -14,8 +14,30 @@ h5,
 h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
+  font-weight: normal;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  color: $green;
+  margin-bottom: em(6px);
+}
+
+h3, .introduction {
+  font-family: $secondary-font-family;
+  font-size: $h3-font-size;
+}
+
+h3 {
+  margin-bottom: $small-spacing/3;
+}
+
+h4 {
+  font-family: $base-font-family;
+  text-transform: uppercase;
+  margin-bottom: $small-spacing/3;
 }
 
 p {

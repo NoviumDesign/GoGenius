@@ -1,20 +1,19 @@
-ul,
-ol {
+.no-list-style {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
 
-  &%default-ul {
-    list-style-type: disc;
-    margin-bottom: $small-spacing;
-    padding-left: $base-spacing;
-  }
+ul {
+  list-style-type: disc;
+  margin-bottom: $small-spacing;
+  padding-left: $base-spacing;
+}
 
-  &%default-ol {
-    list-style-type: decimal;
-    margin-bottom: $small-spacing;
-    padding-left: $base-spacing;
-  }
+ol {
+  list-style-type: decimal;
+  margin-bottom: $small-spacing;
+  padding-left: $base-spacing;
 }
 
 dl {
@@ -27,5 +26,14 @@ dl {
 
   dd {
     margin: 0;
+  }
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-right: $small-spacing;
+
+  &:last-child {
+    margin-right: 0;
   }
 }

@@ -1,9 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption);
+
+@font-face {
+  font-family: 'Proxima Regular';
+  src: url('../fonts/proximanova-regular-webfont.eot');
+  src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+       url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+       url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Condensed Semibold';
+  src: url('../fonts/proximanovacond-semibold-webfont.eot');
+  src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'),
+       url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype'),
+       url('../fonts/proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Proxima Regular', $helvetica;
+$secondary-font-family: 'Proxima Condensed Semibold', $helvetica;
+$heading-font-family: 'PT Serif Caption', serif;
 
 // Font Sizes
 $base-font-size: 1em;
+
+$h1-font-size: em(36px);
+
+$h3-font-size: em(20px);
 
 // Line height
 $base-line-height: 1.5;
@@ -11,22 +42,23 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-spacing: em(21px);
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
+$blue: #5893A8;
+$green: #1DC454;  
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray: #F2F2F2;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: #000;
+$action-color: $green;
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: $dark-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
