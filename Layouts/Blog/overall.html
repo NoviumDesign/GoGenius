@@ -1,1 +1,19 @@
-  <div class="blog-container">   <h1>{tag_blogtitle}</h1>   <p class="description">{tag_blogdescription}</p>   <div class="wrapper clear">    <div class="post-list">     {tag_postlist}     <hr />     <p class="page-nav">{tag_previouspage} {tag_pagination} {tag_nextpage}</p>      </div>    <div class="side-panel">     <h4>Recent Posts</h4>     {tag_blogrecentpost}     <hr />     <h4>Tags</h4>     {tag_blogtagcloud}     {tag_blogtaglist}     <hr />     <h4>Archive</h4>     {tag_blogpostarchive}    </div>   </div><!-- END .wrapper -->  </div><!-- END .blog-container -->      
+<body class="news-body">
+  <div class="news-main">
+    <div class="news-header">
+      <h1>{{ title | replace: 'och', '&' }}</h1>
+    </div>
+    <div class="news-list">
+      {tag_postlist}
+
+      <div class="pagination">
+        {% if pagination.previousPageUrl != "#" %}
+          <span class="previous"><a href="{{ pagination.previousPageUrl }}">Nyare inlägg</a></span>
+        {% endif %}
+        {% if pagination.nextPageUrl != "#" %}
+          <span class="next"><a href="{{ pagination.nextPageUrl }}">Äldre inlägg</a></span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
