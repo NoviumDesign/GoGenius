@@ -1,17 +1,17 @@
 .customer-list-container
-  @extend .subpage-article //same spans as subpage article
+  @extend .article-container //same spans as subpage article
 
   border-top: $base-border
 
+  .customer-list
+    +clearfix
+    padding: $base-spacing $base-spacing 0 $base-spacing
+
   .row
     +span(full)
-    padding-top: $base-spacing
     
     +breakpoint($medium-screen)
-      +span(4 of 12)
-
-      &:last-child
-        +span(4 of 12 last)
+      +gallery(4)
 
     ul
       @extend .no-list-style

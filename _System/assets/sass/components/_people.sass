@@ -1,0 +1,32 @@
+.people-section
+  margin-bottom: $base-spacing
+
+.people-header, .people-list
+  @extend .container
+
+.people-header
+  border-bottom: $base-border
+  margin-bottom: $base-spacing
+
+.people-list 
+  ul
+    @extend .no-list-style
+    @extend .horizontal-list
+
+    +clearfix
+
+    li
+      +span(12)
+      margin-bottom: $base-spacing
+
+      +breakpoint($small-plus-screen)
+        +gallery(6)
+
+      +breakpoint($medium-screen)
+        +gallery(4)
+
+      +breakpoint($large-screen)
+        +gallery(2.4)
+
+    .name
+      padding: 0 $small-spacing

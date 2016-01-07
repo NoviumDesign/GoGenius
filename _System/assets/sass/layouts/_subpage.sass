@@ -7,9 +7,8 @@
   .subpage-main
     @extend .container
 
-    .subpage-article
+    .article-container
       +span(full)
-      padding: 0 $base-spacing
 
       +breakpoint($medium-screen)
         +span(10)
@@ -19,7 +18,10 @@
         +span(6)
         +push(3)
 
-    .subpage-image
+      .article
+        padding: 0 $base-spacing
+
+    .image-container
       +span(full)
       padding: $base-spacing 0
 
@@ -29,3 +31,6 @@
 
       img
         width: 100%
+
+      .image
+        padding: 0 $base-spacing
