@@ -1,6 +1,3 @@
-
-/* -------- _System/assets/js/form.js -------- */ 
-
 // Validation
 $.validate({
   borderColorOnError : '#c0392b'

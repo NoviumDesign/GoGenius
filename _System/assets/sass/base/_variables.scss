@@ -48,7 +48,8 @@ $base-z-index: 0;
 
 // Colors
 $blue: #5893A8;
-$green: #1DC454;  
+$green: #1DC454;
+$red: #c0392b;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #F2F2F2;
@@ -62,7 +63,7 @@ $base-border-color: $dark-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: $light-gray;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms

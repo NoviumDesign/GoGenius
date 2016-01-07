@@ -1,0 +1,30 @@
+.contact-container
+  @extend .container
+
+  margin-bottom: $base-spacing
+
+  .contact-main
+    +span(12)
+
+    +breakpoint($medium-screen)
+      +span(10)
+
+    +breakpoint($large-screen)
+      +span(8)
+
+  .form
+    +span(12)
+    margin-bottom: $base-spacing
+
+    +breakpoint($medium-screen)
+      +span(6)
+      margin-bottom: 0
+
+  .information-list
+    +span(12)
+
+    +breakpoint($medium-screen)
+      +span(6 last)
+
+    ul
+      @extend .no-list-style

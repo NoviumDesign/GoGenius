@@ -4,16 +4,15 @@
 .people-header, .people-list
   @extend .container
 
-.people-header
-  border-bottom: $base-border
-  margin-bottom: $base-spacing
+.people-list
+  border-top: $base-border
 
-.people-list 
   ul
     @extend .no-list-style
     @extend .horizontal-list
 
     +clearfix
+    padding-top: $base-spacing
 
     li
       +span(12)

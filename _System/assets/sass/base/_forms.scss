@@ -5,6 +5,23 @@ fieldset {
   padding: $base-spacing;
 }
 
+.form-row {
+  @include span(full);
+
+  &.has-error {
+    input,
+    textarea {
+      margin-bottom: $small-spacing/2;
+      border: 1px solid;
+    }
+
+    .form-error {
+      display: inline-block;
+      margin-bottom: $small-spacing;
+    }
+  }
+}
+
 input,
 label,
 select {
@@ -29,14 +46,12 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple] {
   background-color: $base-background-color;
-  border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
+  border: none;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  padding: $small-spacing;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
@@ -87,4 +102,9 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+}
+
+// Validated form sent message
+#formMessage {
+  display: none;
 }

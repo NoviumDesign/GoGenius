@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kontakta GoGenius</title>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <section class="contact-section">
+          <div class="contact-container">
+            <div class="contact-main">
+              <h1 ice:editable="multiline">Välkommen att höra av dig!</h1>
+              <p class="introduction" ice:editable="multiline">Är du nyfiken på hur en innovativ affärsstrategi kan göra din verksamhet mer konkurrenskraftig? Eller har du andra frågor? Ta kontakt med oss. Tjänsterna förmedlas av Näringslivets Ledarskapsakademi.</p>
+
+              <div class="form">
+                <div id="formMessage"></div>
+                <form id="contactForm" name="catwebformform97906" method="post" enctype="multipart/form-data" action="http://gogenius.noviumplatform.se/FormProcessv2.aspx?WebFormID=10090&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+                  <div class="form-row">
+                    <input data-validation="length" data-validation-length="min4" data-validation-error-msg="Fyll i ditt namn" placeholder="Namn" type="text" name="FullName" id="FullName" class="cat_textbox" maxlength="255" />
+                  </div>
+                  <div class="form-row">
+                    <input data-validation="email" data-validation-error-msg="Fyll i en korrekt epost-adress" placeholder="Epost" type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" />
+                  </div>
+                  <div class="form-row">
+                    <textarea data-validation="required" data-validation-error-msg="Skriv ett meddelande" placeholder="Meddelande" name="CAT_Custom_869" id="CAT_Custom_869" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                  </div>
+                  <div class="form-row">
+                    <input class="cat_button" type="submit" value="Submit" id="catwebformbutton" />
+                  </div>
+                </form>
+              </div>
+
+              <div class="information-list">
+                <ul>
+                  <li><strong>Näringslivets Ledarskapsakademi</strong></li>
+                  <li>Trädgårdsgatan 11</li>
+                  <li>753 09 Uppsala</li>
+                </ul>
+                <ul>
+                  <li><a href="mailto:dialog@gogenius.se">dialog@gogenius.se</a></li>
+                  <li>019 - 10 49 50</li>
+                </ul>
+                <ul>
+                  <li><strong>Christina Franzén</strong></li>
+                  <li><a href="mailto:christina.franzen@gogenius.se">christina.franzen@gogenius.se</a></li>
+                  <li>0709 - 42 91 12</li>
+                </ul>
+                <ul>
+                  <li><strong>Marita Svensson</strong></li>
+                  <li><a href="mailto:marita.svensson@gogenius.se">marita.svensson@gogenius.se</a></li>
+                  <li>0708 - 16 17 21</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="people-section">
+          <div class="people-list">
+            <ul>
+                <li ice:editable="section">
+                    <img ice:editable="image" src="/images/konsulter/christina.jpg" alt="Christina Franzen">
+                    <span ice:editable="line" class="name">Christina Franzén</span>
+                </li>
+                <li ice:editable="section">
+                    <img ice:editable="image" src="/images/konsulter/marita.jpg" alt="Marita Svensson">
+                    <span ice:editable="line" class="name">Marita Svensson</span>
+                </li>
+                <li ice:editable="section">
+                    <img ice:editable="image" src="/images/konsulter/par.jpg" alt="Pär Lärkeryd">
+                    <span ice:editable="line" class="name">Pär Lärkeryd</span>
+                </li>
+                <li ice:editable="section">
+                    <img ice:editable="image" src="/images/konsulter/anders.jpg" alt="Anders Warpman">
+                    <span ice:editable="line" class="name">Anders Warpman</span>
+                </li>
+                <li ice:editable="section">
+                    <img ice:editable="image" src="/images/konsulter/solveig.jpg" alt="Solveig Warpman">
+                    <span ice:editable="line" class="name">Solveig Warpman</span>
+                </li>
+                <li ice:editable="section">
+                    <img ice:editable="image" src="/images/konsulter/camilla.jpg" alt="Camilla Rundberg">
+                    <span ice:editable="line" class="name">Camilla Rundberg</span>
+                </li>
+            </ul>
+        </div>
+      </section>
+    </body>
+</html>
