@@ -848,6 +848,19 @@ header {
             margin-left: 77.88462%;
             margin-right: -100%;
             clear: none; } }
+      .people-list ul li a.consultant {
+        display: block;
+        padding: 0;
+        color: #000; }
+        .people-list ul li a.consultant::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .people-list ul li a.consultant:hover {
+          color: gray; }
+          .people-list ul li a.consultant:hover img {
+            opacity: 0.75;
+            transition: opacity 150ms ease; }
     .people-list ul img {
       display: block;
       margin-bottom: 0.65625em; }
@@ -855,20 +868,10 @@ header {
       color: #1DC454; }
       .people-list ul .mail:hover {
         color: #179d43; }
-    .people-list ul a {
-      display: block;
-      color: #000; }
-      .people-list ul a::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .people-list ul a:hover {
-        color: gray; }
-        .people-list ul a:hover img {
-          opacity: 0.75;
-          transition: opacity 150ms ease; }
-    .people-list ul span, .people-list ul a.mail {
-      padding: 0 0.65625em; }
+    .people-list ul span, .people-list ul a {
+      padding: 0 0.65625em;
+      word-wrap: break-word;
+      display: block; }
 
 .index-main {
   padding: 0 1.3125em; }

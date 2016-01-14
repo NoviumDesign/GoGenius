@@ -28,6 +28,19 @@
       +breakpoint($large-screen)
         +gallery(3)
 
+      a.consultant
+        display: block
+        +clearfix
+        padding: 0
+        color: $base-font-color
+
+        &:hover
+          color: lighten($base-font-color, 50%)
+
+          img
+            opacity: 0.75
+            transition: opacity $base-duration $base-timing
+
     img
       display: block
       margin-bottom: $small-spacing
@@ -38,17 +51,7 @@
       &:hover
         color: shade($action-color, 20%)
 
-    a
-      display: block
-      +clearfix
-      color: $base-font-color
-
-      &:hover
-        color: lighten($base-font-color, 50%)
-
-        img
-          opacity: 0.75
-          transition: opacity $base-duration $base-timing
-
-    span, a.mail
+    span, a
       padding: 0 $small-spacing
+      word-wrap: break-word
+      display: block
