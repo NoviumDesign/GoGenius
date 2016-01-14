@@ -1,5 +1,6 @@
 .people-section
   margin-bottom: $base-spacing
+  padding: 0 $base-spacing
 
 .people-header, .people-list
   @extend .container
@@ -25,9 +26,21 @@
         +gallery(4)
 
       +breakpoint($large-screen)
-        +gallery(2.4)
+        +gallery(3)
+
+    img
+      display: block
+      margin-bottom: $small-spacing
+
+    .mail
+      color: $action-color
+
+      &:hover
+        color: shade($action-color, 20%)
 
     a
+      display: block
+      +clearfix
       color: $base-font-color
 
       &:hover
@@ -37,5 +50,5 @@
           opacity: 0.75
           transition: opacity $base-duration $base-timing
 
-    .name
+    span, a.mail
       padding: 0 $small-spacing

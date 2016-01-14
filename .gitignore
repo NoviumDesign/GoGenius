@@ -2,3 +2,4 @@
 bower_components
 node_modules
 sftp-config.json
+.remote-sync.json

@@ -2,9 +2,7 @@
   <div class="post-details">{{ date | date: '%d MMM yyyy' }}</div>
   <h3 class="post-title"><a href="{{ url }}">{{ title }}</a></h3>
   <div class="post-body">
-    {% if postFeaturedImage %}
-      <a href="{{ url }}"><img src="{{ postFeaturedImage }}"></a>
-    {% endif %}
+    {% unless postFeaturedImage == empty %}<img src="{{ postFeaturedImage }}">{% endunless %}
 
     <p>
       {{ body | strip_html | truncatewords: 55 }}

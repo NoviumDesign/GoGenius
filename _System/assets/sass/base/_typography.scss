@@ -20,14 +20,19 @@ h6 {
 }
 
 h1 {
-  font-size: $h1-font-size;
+  font-size: $h1-font-size*0.75;
   color: $green;
   margin-bottom: em(6px);
+
+  @include breakpoint($medium-screen) {
+    font-size: $h1-font-size;
+  }
 }
 
 h3, .introduction {
   font-family: $secondary-font-family;
   font-size: $h3-font-size;
+  line-height: 1.45em;
 }
 
 h3 {

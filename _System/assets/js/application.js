@@ -13,3 +13,10 @@ $(document).ready(function() {
     $('#contactForm').fadeOut();//Hide the form
   });
 });
+
+/* -------- _System/assets/js/mobile-nav.js -------- */ 
+
+$( "#navToggle" ).click(function() {
+  $( "#mobileNav" ).toggleClass( "active" );
+  $( this ).toggleClass( "active, close" );
+});
