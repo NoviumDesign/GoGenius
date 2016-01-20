@@ -1,5 +1,6 @@
 .contact-section
-  padding: 0 $base-spacing
+  +breakpoint($medium-screen)
+    padding: 0 $base-spacing
 
 .contact-container
   @extend .container
@@ -23,14 +24,14 @@
     margin-bottom: $base-spacing
 
     +breakpoint($medium-screen)
-      +span(6)
+      +span(7)
       margin-bottom: 0
 
   .information-list
     +span(12)
 
     +breakpoint($medium-screen)
-      +span(6 last)
+      +span(5 last)
 
     ul
       @extend .no-list-style

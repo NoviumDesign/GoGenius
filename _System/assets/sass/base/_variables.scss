@@ -69,10 +69,10 @@ $light-gray: #F2F2F2;
 
 // Font Colors
 $base-font-color: #000;
-$action-color: $green;
+$action-color: shade($green, 15%);
 
 // Border
-$base-border-color: $dark-gray;
+$base-border-color: lighten($dark-gray, 10%);
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

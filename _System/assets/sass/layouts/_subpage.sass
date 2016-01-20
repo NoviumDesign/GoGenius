@@ -19,11 +19,17 @@
         +push(2.5)
 
       .article
-        padding: 0 $base-spacing
+        +breakpoint($medium-screen)
+          padding: 0 $base-spacing
+
+        img
+          margin-bottom: $small-spacing
 
     .image-container
       +span(full)
-      padding: $base-spacing 0
+
+      +breakpoint($medium-screen)
+        padding: $base-spacing 0
 
       +breakpoint($large-screen)
         +span(8)

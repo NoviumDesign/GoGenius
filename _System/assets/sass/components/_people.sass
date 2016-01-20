@@ -1,6 +1,8 @@
 .people-section
   margin-bottom: $base-spacing
-  padding: 0 $base-spacing
+
+  +breakpoint($medium-screen)
+    padding: 0 $base-spacing
 
 .people-header, .people-list
   @extend .container

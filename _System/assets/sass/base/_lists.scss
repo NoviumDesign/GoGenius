@@ -31,7 +31,7 @@ dl {
 
 .horizontal-list li {
   display: inline-block;
-  margin-right: $small-spacing;
+  margin-right: $base-spacing;
 
   &:last-child {
     margin-right: 0;

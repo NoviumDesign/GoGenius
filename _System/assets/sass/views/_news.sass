@@ -18,13 +18,21 @@
       +span(7)
       +push(2.5)
 
+  .post-body img
+    margin-top: $small-spacing
+    margin-bottom: $small-spacing
+
   .news-header
-    padding: 0 $base-spacing
+    +breakpoint($medium-screen)
+      padding: 0 $base-spacing
 
   .news-list .news-post
     border-bottom: $base-border
-    padding: 0 $base-spacing $base-spacing $base-spacing
+    padding-bottom: $base-spacing
     margin-bottom: $base-spacing
+
+    +breakpoint($medium-screen)
+      padding: 0 $base-spacing $base-spacing $base-spacing
 
     p
       margin: 0
@@ -37,8 +45,10 @@
 
   .pagination
     +clearfix
-    padding: 0 $base-spacing
     margin-bottom: $base-spacing
+
+    +breakpoint($medium-screen)
+      padding: 0 $base-spacing
 
     .previous, .next
       display: inline-block

@@ -51,7 +51,7 @@ select[multiple=multiple] {
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
-  padding: $small-spacing;
+  padding: $small-spacing 0.85em;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
@@ -72,6 +72,10 @@ select[multiple=multiple] {
     &:hover {
       border: $base-border;
     }
+  }
+
+  @include placeholder {
+    color: shade($medium-gray, 20%);
   }
 }
 
