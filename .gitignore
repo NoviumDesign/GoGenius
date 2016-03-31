@@ -3,3 +3,7 @@ bower_components
 node_modules
 sftp-config.json
 .remote-sync.json
+
+_System/assets/css/application.css
+
+_System/assets/css/application.css.map
